@@ -21,5 +21,4 @@ public class HealingFountain : Collidable
             GameManager.instance.player.Heal(healingAmount);
         }
     }
-
 }

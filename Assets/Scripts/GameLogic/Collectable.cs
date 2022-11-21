@@ -21,5 +21,4 @@ public class Collectable : Collidable
     {
         this.isCollected = isCollected;
     }
-
 }

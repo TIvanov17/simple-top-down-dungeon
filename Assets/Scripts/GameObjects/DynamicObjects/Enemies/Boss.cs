@@ -19,7 +19,6 @@ public class Boss : Enemy
             Vector3 addedPotionVector = new Vector3(xValue, yValue, 0);
 
             fireballTransormColl[i].position = transform.position + addedPotionVector;
-        }
-       
+        }      
     }
 }

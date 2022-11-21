@@ -10,7 +10,6 @@ public class Player : Mover
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
     private void FixedUpdate()
     {
         float x = Input.GetAxisRaw("Horizontal");

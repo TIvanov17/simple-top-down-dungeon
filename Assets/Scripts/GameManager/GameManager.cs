@@ -83,7 +83,6 @@ public class GameManager : MonoBehaviour
                                  color, position, 
                                  motion, duration
                                  );
-
     }
 
     public bool TryUpgradeWeapon()
@@ -113,7 +112,6 @@ public class GameManager : MonoBehaviour
             OnLevelUp();
         }
     }
-
     private void OnLevelUp()
     {
         Debug.Log("Level up!");
@@ -133,7 +131,6 @@ public class GameManager : MonoBehaviour
 
         return xpAmount;
     }
-
     public int GetCurrentLevel()
     {
         int result = 0;
@@ -151,7 +148,6 @@ public class GameManager : MonoBehaviour
 
         return result;
     }
-
     public void ChangeHealthBar()
     {
         float ratio = player.health / (float) player.maxHealth;

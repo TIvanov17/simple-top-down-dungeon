@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class Weapon : Collidable
 {
-    // Хар. на оръжието, за да може да бъде променяно
+    // Weapon Attributes
     public int weaponLevel = 0;
     private SpriteRenderer weaponSprite;
 
-    // Завъртане на оръжието (анимация)
+    // Weapon Animation
     private Animator animator;
     private float coolDown = 0.5f;
     private float lastSwing;
 
-    // Полета за това колко damage и колко
-    // ще отблъсне enemy-то конкретното оръжие
+    // Collections Of Weapon Hit Damages and Push Force
     public int[] hitDamageCollection = {1, 2, 3};
     public float[] pushForceCollection = {2.0f, 2.5f, 3.5f };
 
     protected override void Start()
     {
         base.Start();
-        weaponSprite = GetComponent<SpriteRenderer>(); // инициализира сегашното оръжие
+        weaponSprite = GetComponent<SpriteRenderer>(); // init the current weapon
         animator = GetComponent<Animator>();
     }
     
@@ -76,5 +75,4 @@ public class Weapon : Collidable
     {
         return (weaponLevel >= GameManager.instance.weaponSprites.Count - 1);
     }
-
 }

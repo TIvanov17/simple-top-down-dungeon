@@ -32,7 +32,6 @@ public class CameraObject : MonoBehaviour
             delta.x = transform.position.x < lookAt.position.x ?
                       deltaX - xBound :
                       deltaX + xBound;
-
         }
 
         // is we are inside the y - BOUND 
@@ -41,7 +40,6 @@ public class CameraObject : MonoBehaviour
             delta.y = transform.position.y <  lookAt.position.y ?
                       deltaY - yBound :
                       deltaY + yBound;
-
         }
 
         return delta;
